@@ -17,3 +17,12 @@ console.log(studentJSON);
 
 const newStudent = JSON.parse(studentJSON);
 console.log(newStudent);
+
+const { name, courses } = student;
+console.log(name);
+console.log(courses);
+
+const scores = [85, 92, 78, 90];
+const [score1, score2] = scores;
+console.log(score1);
+console.log(score2);
