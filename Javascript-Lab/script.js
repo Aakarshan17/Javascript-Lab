@@ -26,3 +26,10 @@ const scores = [85, 92, 78, 90];
 const [score1, score2] = scores;
 console.log(score1);
 console.log(score2);
+
+const clonedStudent = { ...student, graduationYear: 2024 };
+console.log(clonedStudent);
+
+const newCourses = ['English', 'Computer Science'];
+const allCourses = [...student.courses, ...newCourses];
+console.log(allCourses);
