@@ -33,3 +33,15 @@ console.log(clonedStudent);
 const newCourses = ['English', 'Computer Science'];
 const allCourses = [...student.courses, ...newCourses];
 console.log(allCourses);
+
+student.addCourse = function(course) {
+    this.courses.push(course);
+  };
+
+student.totalCourses = function() {
+    return this.courses.length;
+  };
+
+student.addCourse('Biology');
+  console.log(student.courses);
+  console.log(`Total Courses: ${student.totalCourses()}`);
